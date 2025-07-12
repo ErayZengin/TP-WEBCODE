@@ -180,3 +180,48 @@ body {
 .btn-toggle:active {
     transform: scale(0.95);
 }
+
+.burger {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: #0056b3;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+
+  .menu.open {
+    display: flex;
+  }
+}
+
+.menu li a {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: #ffffff22;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu li a:hover {
+  background-color: white;
+  color: #007BFF;
+}

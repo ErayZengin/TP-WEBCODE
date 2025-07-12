@@ -12,6 +12,11 @@
     <header class="header">
         <h1 class="titre">Bienvenue sur notre site !</h1>
         <p class="sous-titre">Améliorez votre productivité avec notre outil simple et puissant.</p>
+        <button class="burger" aria-label="Menu">&#9776;</button>
+        <ul class="menu">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#formulaire">Contact</a></li>
+        </ul>
     </header>
 
     <main class="contenu">
@@ -34,7 +39,7 @@
             <blockquote>“Un outil indispensable à notre quotidien.”<br>– Sophie M.</blockquote>
         </section>
 
-        <section class="services">
+        <section class="services" id="services">
             <h2>Nos Services</h2>
             <ul>
                 <li>
@@ -52,7 +57,7 @@
             </ul>
         </section>
 
-        <section class="formulaire">
+        <section class="formulaire" id="formulaire">
             <h2>Contactez-nous</h2>
             <form>
                 <input type="text" placeholder="Votre nom" required>
