@@ -91,6 +91,12 @@ body {
 }
 
 .formulaire input,
+.formulaire textarea,
+.formulaire button {
+  font-family: Arial, sans-serif;
+}
+
+.formulaire input,
 .formulaire textarea {
   padding: 0.75rem;
   border: 1px solid #ccc;
@@ -179,13 +185,15 @@ body {
 .menu-navigation li a {
   padding: 0.5rem 1rem;
   border-radius: 5px;
-  background-color: #ffffff22;
+  background-color: #e0e0e0;
+  color: #007BFF;
+  text-decoration: none;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .menu-navigation li a:hover {
-  background-color: white;
-  color: #007BFF;
+  background-color: #ccc;
+  color: #0056b3;
 }
 
 @media (max-width: 768px) {
